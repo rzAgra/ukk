@@ -1,0 +1,11 @@
+// Forward Zone
+zone "ukk-namaKamu.net" {
+        type master;
+        file "/etc/bind/ukk-namaKamu.net";
+};
+
+// Reverse Zone
+zone "10.10.10.in-addr.arpa" {
+        type master;
+        file "/etc/bind/ukk-namaKamu.net.reverse";
+};
